@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>mdsmk32</title>
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="school"><a href="myMainPage.html">ШКОЛА 32</a></div>
+        <table class="DOTWTable" style="float: left;">
+         
+    <tr>
+        <th>Сегодня:</th>
+    </tr>
+    <tr>
+        <td id="currentDay"></td>
+    </tr>
+    <tr class="emptyLine">
+        <td>Урок 1</td>
+    </tr>
+    <tr class="emptyLine">
+        <td>Урок 2</td>
+    </tr>
+    <tr class="emptyLine">
+        <td>Урок 3</td>
+    </tr>
+    <tr class="emptyLine">
+        <td>Урок 4</td>
+    </tr>
+    <tr class="emptyLine">
+        <td>Урок 5</td>
+    </tr>
+</table>
+
+<script>
+    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    const today = new Date();
+    const currentDay = days[today.getDay()];
+    
+    document.getElementById("currentDay").innerText = currentDay;
+</script>
+
+            <div class="menu">
+                <ul>
+                    <li><a class="mainPage" href="https://stvschool32.gosuslugi.ru/">ГЛАВНАЯ СТРАНИЦА</a></li>
+                    <li><a class="teachers" href="teachers.html">УЧИТЕЛЯ</a></li>
+                    <li><a class="schedule" href="schedule.html">РАСПИСАНИЕ</a></li>
+                    <li><a class="contactUs" href="https://github.com/TheSiView">СВЯЗАТЬСЯ С НАМИ</a></li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

@@ -71,3 +71,33 @@ li {
     font-size: 25px;
     font-weight: normal;
 }
+.DOTWTable {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 200px;
+    position: absolute;
+    top: 90px;
+}
+.dayTable {
+    border-collapse: collapse;
+    width: 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+th, td {
+    border: 1px solid #ccc;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.emptyLine {
+    background-color: #f9f9f9;
+}
